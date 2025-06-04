@@ -1,8 +1,9 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { StatusPersonnel } from "./../../common/enums/status-personnel.enum";
+import { Base } from "./../../common/config/base.entity";
 
 @Schema()
-export class Personnel {
+export class Personnel extends Base {
     @Prop({ required: true })
     name: string;
     
@@ -42,11 +43,8 @@ export class Personnel {
     @Prop({ required: true })
     department: string;
 
-    @Prop({ required: true })
-    status: StatusPersonnel; // e.g., active, inactive
-
-    @Prop({ required: true })
-    isActive: boolean; // e.g., true, false
+    @Prop({ default: StatusPersonnel.ACTIVE })
+    status: StatusPersonnel;
 }
 
 export const PersonnelSchema = SchemaFactory.createForClass(Personnel);
