@@ -18,8 +18,8 @@ export class AttendanceController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.attendanceService.findOne(+id);
+  getIdParams(@Param('id') id: string) {
+    return this.attendanceService.findOnePersonnel(id);
   }
 
   @Patch(':id')

@@ -7,6 +7,7 @@ import { Personnel, PersonnelSchema } from './entities/personnel.entity';
 @Module({
   controllers: [PersonnelController],
   providers: [PersonnelService],
-  imports: [MongooseModule.forFeature([{ name: Personnel.name, schema: PersonnelSchema }])]
+  imports: [MongooseModule.forFeature([{ name: Personnel.name, schema: PersonnelSchema }])],
+  exports: [PersonnelService]
 })
 export class PersonnelModule {}

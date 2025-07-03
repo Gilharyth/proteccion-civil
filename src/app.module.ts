@@ -5,6 +5,7 @@ import { AttendanceModule } from './attendance/attendance.module';
 import { PersonnelModule } from './personnel/personnel.module';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
+import { ReportsModule } from './reports/reports.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { UserModule } from './user/user.module';
     PersonnelModule,
     AuthModule,
     UserModule,
+    ReportsModule,
   ],
   controllers: [],
   providers: [],
