@@ -129,7 +129,7 @@ Observaciones:\n
 Estado del Tiempo: Despejado\n\n 
 Organismo Integrados:\n
 Proteccion Civil Colina.\n\n
-Reporte Elaborado por:\n\
+Reporte Elaborado por:\n
 Func. Yoici Lugo\n\n
 Estatus: Cerrado\n\n 
 SOLO QUEREMOS SALVAR VIDA.\n\n
