@@ -6,6 +6,7 @@ import { PersonnelModule } from './personnel/personnel.module';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { ReportsModule } from './reports/reports.module';
+import { MinutasModule } from './minutas/minutas.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { ReportsModule } from './reports/reports.module';
     AuthModule,
     UserModule,
     ReportsModule,
+    MinutasModule,
   ],
   controllers: [],
   providers: [],
